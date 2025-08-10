@@ -3,8 +3,16 @@ import UrlForm from './components/UrlForm.jsx';
 
 function LogoMark() {
   return (
-    <a href="/" className="flex items-center gap-2 group select-none" aria-label="LinkSnap Home">
+    <a href="/" className="flex items-center gap-3 group select-none" aria-label="LinkSnap Home">
       <img src="/favicon.svg" alt="LinkSnap" className="h-10 w-10 rounded-xl shadow-lg shadow-primary-500/30 ring-1 ring-primary-300/40 group-hover:scale-105 transition-transform" />
+      <div className="flex flex-col">
+        <span className="text-xl font-bold text-slate-100 group-hover:text-primary-300 transition-colors">
+          LinkSnap
+        </span>
+        <span className="text-xs text-slate-400 -mt-1">
+          Snap. Share. Simple.
+        </span>
+      </div>
     </a>
   );
 }
